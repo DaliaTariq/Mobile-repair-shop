@@ -1,0 +1,455 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+body{
+    font-family: 'Lato', sans-serif; 
+    overflow-x: hidden;
+    overflow-y: scroll; 
+     
+}
+ul{
+    list-style-type:none;
+}
+.section{
+    padding-top: 80px;
+  /*  padding-bottom: 50px;*/
+}
+a:hover{
+    color: #222;
+    text-decoration: none;
+}
+
+/*****Navigation Start******/
+.navbar.bg-light{
+    background:#222!important;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*border-bottom: 5px solid #136edd;*/
+    margin-bottom: 15px;
+   
+    z-index: 1000;
+  
+}
+.navbar.scrlled{
+    background:rgb(0,0,0,0.6 )!important;
+    border-bottom: none;;
+}
+
+.navbar .navbar-brand{
+    color: #fff;
+    padding-left: 70px;
+}
+.navbar-light .navbar-nav{
+    padding-right: 70px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:#fff;
+    font-size: 16px;
+    cursor: pointer;
+    padding-right:17px;
+    padding-left: 17px;
+    text-transform: uppercase;
+    transition-duration: .3s;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    font-weight: bold;
+    /*text-decoration: underline;*/
+    transition-duration: .3s;
+    color:#fff;
+}
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+/**************************************************Navigation End**************************************************/
+.hero{
+    width: 100%;
+    height: 600px;
+   
+}
+
+ .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.4);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.hero .carousel-inner .carousel-caption{
+    top:35%;
+    color:#fff;
+}
+
+
+
+
+
+/****************************************************End hero********************************************/
+/*start about-me*/
+.about-me{
+    background-color: #fff;
+  
+}
+.about-me .image{
+    width: auto;
+    max-width: 280px;
+    height: auto;
+    max-height: 280px;
+    border-radius: 50%;
+}
+.about-me .image a img{
+    width: 100%;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+.about-me .image a img:hover{
+    opacity: .7;
+    transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+.section-title{
+    color: #252525;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    margin-top: 40px;
+}
+
+.about-content p{
+    color:#a6a6a6;
+    font-size: 16px;
+    text-align: justify;
+}
+a.download{
+    background-color: #222;
+    border-radius: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+    border:none;
+}
+a.download:hover{
+    background-color: #222;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .5);
+    transition-duration: .4s;
+}
+/***********************************************************Abou End*****************************************/
+/*Start project*/
+.project,
+.contact{
+    text-align: center;
+}
+.project .job a{
+    display: inline-block;
+    color: #252525;
+    font-weight: 600;
+    padding: 35px;
+    font-weight: 600;
+}
+
+.project .job a:first-child{
+    padding-right: 70px;
+}
+.project .job a:hover{
+    color: #222;
+    font-weight: 700;
+    
+}
+.project .image-project{
+    margin-bottom: 30px;
+}
+.project .row .image-project a{
+    display: inline-block;
+    width: 100%;
+}
+.project .row .image-project{
+    width: 100%;
+    height: 300px;
+}
+.project .row .image-project img{
+    width: 100%;
+    height: 300px;
+}
+/**************************************End Projects*****************************/
+
+/********************plugins style****/
+.lightboxOverlay{
+    background-color: #222;
+    opacity: 0.6;
+}
+
+/******************************************Start Contact Section*****************************************/
+.contact .info_Mab{
+    background-color: #222;
+    color: #fff;
+    width: 100%;
+    height: 100%;;
+}
+.contact .info_Mab .info{
+    text-align: left;
+    padding: 40px 30px;
+    color: #fff;
+}
+.contact .info_Mab .map{
+    width: 100%;
+    height: 100%;;
+}
+.contact .info_Mab .map .gmap_canvas{
+    width: 100% !important;
+    height: 100 !important;
+}
+.contact .info_Mab .info h4{
+    padding-left: 40px;
+    padding-bottom: 15px;
+}
+.contact .info_Mab .info ul li{
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.contact .info_Mab .info ul li span{
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+
+/**************************************/
+#contact_footer{
+    position: relative;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 70px;
+ }
+ #contact_footer form{
+    background: #fff;
+    border-radius: 32px ;
+    padding: 50px;
+    text-align: left;
+    box-shadow: 5px 10px 20px rgba(0,0,0,.4);
+ }
+ 
+ #contact_footer form label{
+    font-size: 20px;
+    color: #4E4D4D
+ }
+ #contact_footer form input.form-control{
+    height: 49px;
+    border-radius: 16px;
+    pad: 10px;
+ }
+ #contact_footer form textarea{
+    text-align: left;
+    resize: none;
+    border-radius: 16px;
+ }
+ #contact_footer form .btn{
+    background-color: #222 !important;
+    border:none;
+    width:150px;
+    height: 50px;
+    border-radius: 17px;
+    margin-top: 32px;
+ }
+ #contact_footer form .btn:hover{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+ }
+ #contact_footer .footer{
+    position: relative;
+    height: 200px;
+    background-image: url(../image/bb.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    margin-top: -80px;
+    
+ }
+ #contact_footer .footer .social{
+    position: absolute;
+    bottom: 20px;
+    left: 40%;
+  
+ }
+
+ 
+ .footer .social .left li{
+     display: inline-block;
+    margin-left: 12px;
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+ }
+ 
+ .footer .social .left li a{
+    width:100%;
+    display: inline-block;
+     color: #222;
+    line-height:50px;
+    font-size: 20px;
+    padding-top: 25%;
+ }
+/*******Media Quiry****/
+/*Browser*/
+@media (max-width:1200){
+    .container{
+        max-width: 1200px;
+    }
+     }
+
+    /*Mobile*/
+    @media (max-width:768px){
+        body,html{
+            overflow-x: hidden;
+        }
+        
+    .navbar .navbar-brand{
+        padding-left: 10px;
+    }
+    .navbar-light .navbar-nav{
+        padding-right: 10px;
+    }
+
+    .hero{
+        height: 400px;
+    }
+    h1{
+        font-size: 22px;
+    }
+    .hero .hero-content p{
+        font-size: 18px;
+       /* margin-bottom: 10px*/
+    }
+    ul.social-link{
+       padding-left: 0;
+        text-align: center;
+    }
+    ul.social-link li a{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-right: 10px;
+    }
+    .section-title{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .sub-title{
+        font-size: 13px;
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .about-content p{
+        font-size: 13px;
+        text-align: justify;
+    }
+    a.download{
+        padding: 5px 10px;
+        font-size: 14px;
+        background-color: #222 !important
+    }
+    .project .job a{
+        padding-top: 0;
+    }
+    .project .job a:first-child{
+        padding-right: 30px;
+    }
+    .project .image-project{
+        margin-bottom: 15px;
+    }
+    #contact_footer .footer .social{
+        left:30%;
+    }
+    .contact .info_Mab .info{
+        padding:40px 15px ;
+    }
+    #contact_footer form label{
+        font-size: 14px;
+    }
+    #contact_footer form{
+        padding:30px;
+    }
+}
+
+@media(min-width:768px) and (max-width:1024px){
+    h1{
+        font-size: 30px;
+    }
+    .navbar .navbar-brand{
+        padding-left: 15px;
+    }
+    .about-me .image a img{
+        margin-top: 70px;
+    }
+    .project .image-project {
+        margin-bottom: 30px;
+    }
+
+    #contact_footer .footer .social{
+        left:30%;
+    }
+    .contact .info_Mab{
+        width:100%;
+        height: 100%;
+    }
+    .contact .info_Mab .map{
+        width:100%;
+        overflow: hidden;
+        height: 100%;
+    }
+    .contact .info_Mab .info{
+        padding:40px 15px ;
+    }
+
+    #contact_footer form label{
+        font-size: 14px;
+    }
+
+    #contact_footer form{
+        padding:30px;
+    }
+}
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (min-width:768px){
+    .col-md-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+    }
+}
